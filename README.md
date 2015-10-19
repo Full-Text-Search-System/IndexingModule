@@ -38,7 +38,7 @@ $ sudo apt-get install libapache2-mod-auth-mysql
 ```  
 ```
 $ sudo apt-get install php5-mysql
-```
+```  
 
 
 In order to install Laravel, we need composer:  

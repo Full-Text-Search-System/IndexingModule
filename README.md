@@ -85,7 +85,7 @@ $ sudo service sphinxsearch start
 ```
 $ apt-get install python-pip
 ```
-###grant permission to php: 
+###Grant permission to php: 
 ```
 $ sudo visudo
 ```  
@@ -95,7 +95,7 @@ then, add the code at the last line:
 ```
 www-data ALL=NOPASSWD: /usr/bin/indexer
 ```
-###install required python modules
+###Install required python modules
 
 install mysql module:  
 

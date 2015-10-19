@@ -59,6 +59,7 @@ $ cd /etc
 ````
 $ sudo nano profile
 ````  
+And add this line into this file:
 ````
 export PATH="$PATH:/home/vagrant/.composer/vendor/bin"
 ````  

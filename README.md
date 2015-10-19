@@ -17,6 +17,7 @@ then, ssh to the virtual machine:
 $ vagrant ssh
 ```
 
+
 In Ubuntu 14.04, we should implement apache2, php, mysql, Sphinxsearch and Laravel:
 
 ###Install apache2:  

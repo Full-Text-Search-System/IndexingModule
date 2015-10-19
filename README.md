@@ -1,6 +1,6 @@
 # IndexingModule
 
-In Ubuntu 14.04, we should implement apache2, php, mysql, sphinxsearch and laravel:
+In Ubuntu 14.04, we should implement apache2, php, mysql, Sphinxsearch and Laravel:
 
 ###Install apache2:  
 ```

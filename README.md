@@ -87,3 +87,26 @@ $ sudo service sphinxsearch start
 ```
 $ apt-get install python-pip
 ```
+###grant permission to php: 
+```
+$ sudo visudo
+```  
+
+then, add the code at the last line:
+
+```
+www-data ALL=NOPASSWD: /usr/bin/indexer
+```
+###install required python modules
+
+install mysql module:  
+
+```
+$ sudo apt-get install python-mysqldb
+```  
+
+install loxun module:  
+
+```
+$ pip install loxun
+```

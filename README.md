@@ -1,5 +1,4 @@
 # IndexingModule
-cacheable real-time indexing and full-text searching module
 
 In Ubuntu 14.04, we should implement apache2, php, mysql, sphinxsearch and laravel:
 

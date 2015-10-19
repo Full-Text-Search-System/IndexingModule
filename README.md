@@ -1,5 +1,10 @@
 # IndexingModule
 
+We use Vagrant to deploy the development environment.
+
+###Download and install vagrant
+Vagrant download link: https://www.vagrantup.com/downloads.html
+
 In Ubuntu 14.04, we should implement apache2, php, mysql, Sphinxsearch and Laravel:
 
 ###Install apache2:  

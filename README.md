@@ -21,7 +21,7 @@ $ sudo apt-get install python-software-properties
 $ sudo apt-add-repository ppa:ondrej/php5-5.6
 ```   
 
-###Or install php5.6:  
+###Install php5.6:  
 ```
 $ sudo apt-get update
 ```   

@@ -83,7 +83,7 @@ $ sudo apt-get install sphinxsearch
 $ sudo service sphinxsearch start
 ```
 
-###Install pip
+###Install pip:
 ```
 $ apt-get install python-pip
 ```

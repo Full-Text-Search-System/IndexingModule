@@ -5,7 +5,9 @@ We use Vagrant to deploy the development environment.
 
 ##Introduction
 
-The IndexingModule provide the REST API for other websites if they want to use our indexing function. 
+The IndexingModule provides the REST APIs for others if they want to use our indexing and adding functions. 
+
+The Sphinx indexing results are saved in this module.
 
 There are two REST APIs: 
 

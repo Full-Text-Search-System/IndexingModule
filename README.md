@@ -2,6 +2,21 @@
 
 We use Vagrant to deploy the development environment.
 
+
+##Introduction
+
+The IndexingModule provide the REST API for other websites if they want to use our indexing function. 
+
+There are two REST APIs: one is for full text searching , another is for adding files into database and indexing the new files.
+
+Search API can be used to search words and phrases in the Sphinx indexing result. 
+
+Add API can be used to add files into an remote database and update the Sphinx indexing result in time.
+
+PS: When you install vagrant by using our VagrantFile, you need to put the file "workspace/demo" into the shared file of virtual machine and local machine. 
+
+##Steps
+
 ###Download and install vagrant
 Vagrant download link: https://www.vagrantup.com/downloads.html
 

@@ -21,8 +21,9 @@ We use Vagrant to deploy the development environment.
 Vagrant download link: https://www.vagrantup.com/downloads.html
 
 ###Init a Ubuntu 14.04 virtual machine:
+####change vagrantfile configuration:
 ```
-$ vagrant init  ubuntu/trusty64
+config.vm.box = "ubuntu/trusty64"
 ```
 ```
 $ vagrant up

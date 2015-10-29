@@ -31,7 +31,8 @@ try:
         
     cursor = con.cursor()
     cursor.execute("SELECT * from rtindices")
-    rtindex = cursor.fetchone()
+    rtindices = cursor.fetchall()
+    rtindex = rtindices[1]
     start_id = rtindex[1]
     end_id = rtindex[2]
     

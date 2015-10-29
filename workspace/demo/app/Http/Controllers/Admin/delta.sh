@@ -1,0 +1,1 @@
+sudo indexer testdelta --rotate

@@ -65,17 +65,30 @@ class FilesController extends Controller
         $conn = new Connection();
         $conn->setParams(array('host' => '127.0.0.1', 'port' => 9306));
 
-        if ($size >= 1) {
+        if ($size >= 5) {
             // clear all index in rt-index
             $code;
+            $rtids[1]->start_id = $start_id;
+            $rtids[1]->end_id = $end_id;
+            $rtids[1]->save();
+
             Helper::create($conn)->truncateRtIndex('testrt')->execute();
 
             // build delta-index and merge it into main-index
-            system('sudo indexer --merge test1 testdelta --rotate', $code);
-            system('sudo indexer testdelta --rotate', $code);
-            
+            // system('sudo indexer --merge test1 testdelta --rotate', $code);
+            // system('sudo indexer testdelta --rotate', $code);
+            // system('sudo indexer --merge test1 testdelta --rotate', $code);
+            pclose(popen('php /var/www/demo/app/Http/Controllers/Admin/updateIndex.php &', 'r'));
+            // system('php /var/www/demo/app/Http/Controllers/Admin/merge.php');
+
+            // $file = popen("sudo indexer testdelta --rotate","r");
+            // pclose($file);
+
+            // $file = popen('sudo indexer --merge test1 testdelta --rotate',"r");
+            // pclose($file);  
+
             $rtids[0]->start_id = intval($id);
-        }
+        } 
 
         $query = SphinxQL::create($conn)->insert()->into('testrt');
         $query->columns('id', 'filename', 'content')->values($id, $filename, $content);

@@ -15,9 +15,7 @@ There are two REST APIs:
 PS: When you install vagrant by using our VagrantFile, you need to put the file "workspace/demo" into the shared file of virtual machine and local machine. 
 
 ##Deployment Steps
-
 We use Vagrant to deploy the development environment.
-
 ###Download and install vagrant
 Vagrant download link: https://www.vagrantup.com/downloads.html
 

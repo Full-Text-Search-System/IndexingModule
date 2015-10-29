@@ -16,6 +16,7 @@ PS: When you install vagrant by using our VagrantFile, you need to put the file 
 
 ##Deployment Steps
 We use Vagrant to deploy the development environment.
+
 ###Download and install vagrant
 Vagrant download link: https://www.vagrantup.com/downloads.html
 

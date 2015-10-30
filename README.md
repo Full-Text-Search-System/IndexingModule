@@ -143,3 +143,9 @@ install loxun module:
 $ pip install loxun
 ```
 ##Run the module
+```
+$cd IndexingModule
+```
+```
+$vagrant up
+```

@@ -21,6 +21,9 @@ We use Vagrant to deploy the development environment.
 Vagrant download link: https://www.vagrantup.com/downloads.html
 
 ###Init a Ubuntu 14.04 virtual machine with the required develop envrionment
+
+#####We have upload a vagrant box wiht required development envrionment in https://atlas.hashicorp.com/FTS
+
 first, change vagrantfile configuration:
 ```
 config.vm.box = "FTS/IndexingModule"

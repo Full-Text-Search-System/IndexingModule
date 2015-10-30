@@ -38,6 +38,8 @@ $ vagrant ssh
 ```
 
 ##Run the module
+
+remember to modify the file name to 
 ```
 $cd IndexingModule
 ```

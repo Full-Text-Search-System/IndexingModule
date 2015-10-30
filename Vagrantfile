@@ -68,4 +68,6 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
+
+  config.ssh.private_key_path = File.expand_path("../vagrant_private_key", __FILE__)	
 end

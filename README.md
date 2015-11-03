@@ -12,7 +12,6 @@ There are two REST APIs:
 
  2. Add API can be used to add files into an remote database and update the Sphinx indexing result in time. In fact, we use RT index and delta-main index to achieve the real-time indexing function. First, we just update the RT index when we add new files. But we set a threshold of RT index, when the number of new files are more than the threshold, we will update the delta index for the new files and merge into main index. And then, the previous RT index will be truncated and rebuild a new one. This can improve the efficency of updating indices and reduce the capacity of RT index.
 
-PS: When you install vagrant by using our VagrantFile, you need to put the file "workspace/demo" into the shared file of virtual machine and local machine. 
 
 ##Deployment Steps
 We use Vagrant to deploy the development environment.
@@ -28,7 +27,11 @@ first,
 ```
 $ vagrant up
 ```
-now, we can ssh to the virtual machine:
+
+PS: When you install vagrant by using our VagrantFile, you need to put the file "workspace/demo" into the shared file of virtual machine and local machine. 
+
+
+we can ssh to the virtual machine:
 ```
 $ vagrant ssh
 ```

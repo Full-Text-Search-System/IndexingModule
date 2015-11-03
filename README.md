@@ -28,10 +28,9 @@ first,
 $ vagrant up
 ```
 
-PS: When you install vagrant by using our VagrantFile, you need to put the file "workspace/demo" into the shared file of virtual machine and local machine. 
+Now, you need to put the file "workspace/demo" into the shared file of virtual machine and local machine. 
 
-
-we can ssh to the virtual machine:
+If you want to modify the virtual machine, you can ssh to the virtual machine:
 ```
 $ vagrant ssh
 ```

@@ -28,7 +28,7 @@ first,
 $ vagrant up
 ```
 
-Now, you need to put the file "workspace/demo" into the shared file of virtual machine and local machine. 
+Now, you need to put the file "workspace/demo" into the file which has Vagrantfile.
 
 If you want to modify the virtual machine, you can ssh to the virtual machine:
 ```

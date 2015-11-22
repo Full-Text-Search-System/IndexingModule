@@ -8,7 +8,7 @@ import codecs
 def findFile(rootDir): 
 	paths = []
 	for lists in os.listdir(rootDir): 
-		if lists != ".DS_Store" and lists !=".gitignore":
+		if lists != ".DS_Store":
 			paths.append(lists) 
 	return paths
        

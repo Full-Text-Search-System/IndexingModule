@@ -181,3 +181,29 @@ merged in 0.344 sec
 total 6530 reads, 0.021 sec, 29.3 kb/call avg, 0.0 msec/call avg
 total 9 writes, 0.009 sec, 2143.0 kb/call avg, 1.0 msec/call avg
 rotating indices: successfully sent SIGHUP to searchd (pid=2707).
+Sphinx 2.2.10-id64-release (2c212e0)
+Copyright (c) 2001-2015, Andrew Aksyonoff
+Copyright (c) 2008-2015, Sphinx Technologies Inc (http://sphinxsearch.com)
+
+using config file '/etc/sphinxsearch/sphinx.conf'...
+indexing index 'testdelta'...
+WARNING: Attribute count is 0: switching to none docinfo
+collected 1 docs, 0.1 MB
+sorted 0.0 Mhits, 100.0% done
+total 1 docs, 117881 bytes
+total 0.350 sec, 335939 bytes/sec, 2.84 docs/sec
+total 3 reads, 0.000 sec, 28.4 kb/call avg, 0.0 msec/call avg
+total 9 writes, 0.000 sec, 16.2 kb/call avg, 0.0 msec/call avg
+rotating indices: successfully sent SIGHUP to searchd (pid=1043).
+Sphinx 2.2.10-id64-release (2c212e0)
+Copyright (c) 2001-2015, Andrew Aksyonoff
+Copyright (c) 2008-2015, Sphinx Technologies Inc (http://sphinxsearch.com)
+
+using config file '/etc/sphinxsearch/sphinx.conf'...
+merging index 'testdelta' into index 'test1'...
+read 0.0 of 0.0 MB, 100.0% done
+merged 2.6 Kwords
+merged in 0.003 sec
+total 154 reads, 0.000 sec, 1.7 kb/call avg, 0.0 msec/call avg
+total 7 writes, 0.000 sec, 12.8 kb/call avg, 0.0 msec/call avg
+rotating indices: successfully sent SIGHUP to searchd (pid=3724).

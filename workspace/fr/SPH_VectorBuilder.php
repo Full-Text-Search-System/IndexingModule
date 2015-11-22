@@ -11,11 +11,11 @@ include_once('SphinxClient.php');
 */
 class VectorBuilder {
 	
-	public static function build($fileName) {
+	public static function build($dir, $fileName) {
 		// according to database
 
 		// read files
-		$line = file_get_contents($fileName);
+		$line = file_get_contents($dir.'/'.$fileName);
 
 		/**********************
 		* preprocessing files *
@@ -45,7 +45,7 @@ class VectorBuilder {
 	    /**********************
 		* save vector to file *
 		**********************/
-		$vectorFile = fopen('V_'.$fileName, 'w');
+		$vectorFile = fopen('vector/V_'.$fileName, 'w');
 		fwrite($vectorFile, strval($size));
 		// ksort($vector);
 		foreach ($vector as $key => $value) {
@@ -140,10 +140,10 @@ class VectorBuilder {
 	}
 }
 
-VectorBuilder::build('2015FoxC.txt');
-VectorBuilder::build('2012HanemanP_thesis.txt');
-VectorBuilder::build('2010CostanzoL.txt');
-VectorBuilder::build('Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
+VectorBuilder::build('file', '2015FoxC.txt');
+// VectorBuilder::build('2012HanemanP_thesis.txt');
+// VectorBuilder::build('2010CostanzoL.txt');
+// VectorBuilder::build('Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
 
 // VectorBuilder::computeScore('V_2015FoxC.txt', 'V_Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
 // VectorBuilder::computeScore('V_2015FoxC.txt', 'V_2012HanemanP_thesis.txt');
@@ -156,7 +156,7 @@ VectorBuilder::build('Efficient and Robust Feature Selection via Joint l2,1-Norm
 
 
 // VectorBuilder::computeScore('V_Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt', 'V_2010CostanzoL.txt');
-VectorBuilder::computeScore('V_2010CostanzoL.txt', 'V_2010CostanzoL.txt');
+// VectorBuilder::computeScore('V_2010CostanzoL.txt', 'V_2010CostanzoL.txt');
 
 
 

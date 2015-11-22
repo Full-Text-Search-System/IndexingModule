@@ -10,11 +10,11 @@ include_once('ComputeScore.php');
 */
 class VectorBuilder {
 	
-	public static function build($fileName) {
+	public static function build($dir, $fileName) {
 		// according to database
 
 		// read files
-		$line = file_get_contents($fileName);
+		$line = file_get_contents($dir.'/'.$fileName);
 
 		/**********************
 		* preprocessing files *
@@ -85,17 +85,17 @@ class VectorBuilder {
 	}
 }
 
-VectorBuilder::build('2015FoxC.txt');
-VectorBuilder::build('2012HanemanP_thesis.txt');
-VectorBuilder::build('2010CostanzoL.txt');
-VectorBuilder::build('Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
+VectorBuilder::build('file', '2015FoxC.txt');
+// VectorBuilder::build('2012HanemanP_thesis.txt');
+// VectorBuilder::build('2010CostanzoL.txt');
+// VectorBuilder::build('Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
 
-VectorBuilder::computeScore('V_2015FoxC.txt', 'V_Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
-VectorBuilder::computeScore('V_2015FoxC.txt', 'V_2012HanemanP_thesis.txt');
-VectorBuilder::computeScore('V_2015FoxC.txt', 'V_2010CostanzoL.txt');
+// VectorBuilder::computeScore('V_2015FoxC.txt', 'V_Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
+// VectorBuilder::computeScore('V_2015FoxC.txt', 'V_2012HanemanP_thesis.txt');
+// VectorBuilder::computeScore('V_2015FoxC.txt', 'V_2010CostanzoL.txt');
 
-VectorBuilder::computeScore('V_2012HanemanP_thesis.txt', 'V_Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
-VectorBuilder::computeScore('V_2012HanemanP_thesis.txt', 'V_2010CostanzoL.txt');
+// VectorBuilder::computeScore('V_2012HanemanP_thesis.txt', 'V_Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
+// VectorBuilder::computeScore('V_2012HanemanP_thesis.txt', 'V_2010CostanzoL.txt');
 
-VectorBuilder::computeScore('V_2010CostanzoL.txt', 'V_Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
+// VectorBuilder::computeScore('V_2010CostanzoL.txt', 'V_Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
 

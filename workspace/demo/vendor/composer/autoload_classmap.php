@@ -7,15 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Lib\\SphinxClient' => $baseDir . '/app/lib/SphinxClient.php',
-    'CreateArticlesTable' => $baseDir . '/database/migrations/2015_08_28_195220_create_articles_table.php',
-    'CreateDocsTable' => $baseDir . '/database/migrations/2015_09_27_014307_create_docs_table.php',
     'CreateFilesTable' => $baseDir . '/database/migrations/2015_10_05_004616_CreateFilesTable.php',
-    'CreatePagesTable' => $baseDir . '/database/migrations/2015_08_28_195232_create_pages_table.php',
-    'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-    'CreateRtindicesTable' => $baseDir . '/database/migrations/2015_10_18_210322_create_rtindices_table.php',
-    'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
+    'CreateSimilarityfilesTable' => $baseDir . '/database/migrations/2015_11_22_203908_create_similarityfiles_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
-    'DocsTableSeeder' => $baseDir . '/database/seeds/DocsTableSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/src/Factory.php',
@@ -484,7 +478,6 @@ return array(
     'PHP_Token_XOR_EQUAL' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD_FROM' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
-    'PageTableSeeder' => $baseDir . '/database/seeds/PageTableSeeder.php',
     'RtindicesTableSeeder' => $baseDir . '/database/seeds/RtindicesTableSeeder.php',
     'SebastianBergmann\\Comparator\\ArrayComparator' => $vendorDir . '/sebastian/comparator/src/ArrayComparator.php',
     'SebastianBergmann\\Comparator\\Comparator' => $vendorDir . '/sebastian/comparator/src/Comparator.php',
@@ -522,7 +515,7 @@ return array(
     'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => $vendorDir . '/sebastian/recursion-context/src/InvalidArgumentException.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Resources/stubs/SessionHandlerInterface.php',
-    'ShpCounter' => $baseDir . '/database/migrations/2015_09_28_015101_Shp_counter.php',
+    'SimilarityFilesSeeder' => $baseDir . '/database/seeds/SimilarityFilesSeeder.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
 );

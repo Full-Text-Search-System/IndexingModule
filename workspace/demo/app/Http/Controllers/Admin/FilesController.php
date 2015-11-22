@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 
 use App\File;
 use App\Rtindex;
+use App\Similarityfile;
 
 use Redirect, Input;
 
@@ -25,7 +26,7 @@ class FilesController extends Controller
      */
     public function index()
     {
-        
+    
     }
 
     /**
@@ -55,6 +56,11 @@ class FilesController extends Controller
         $content = file_get_contents($request->file('file')->getRealPath());  
         $request->file('file')->move('file', $filename.'_'.$id);
 
+        // update similarity files
+        $sfids = new Similarityfile;
+        $sfids->doc_id = intval($id);
+        $sfids->filename = $filename;
+        $sfids->save();
         // update rt index
         // check size
         $rtids = Rtindex::all();

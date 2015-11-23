@@ -114,33 +114,33 @@ class VectorBuilder {
 
 
 
-		// // read vector file and build vector
-		// $v1File = fopen($fn1, 'r');
-		// $v1 = array();
-		// $s1 = intval(fgets($v1File));
-		// while (!feof($v1File)) {
-		// 	$line = explode(" ", fgets($v1File));
-		// 	$v1[$line[0]] = intval($line[1]);
-		// }
-		// fclose($v1File);
+	// 	// // read vector file and build vector
+	// 	// $v1File = fopen($fn1, 'r');
+	// 	// $v1 = array();
+	// 	// $s1 = intval(fgets($v1File));
+	// 	// while (!feof($v1File)) {
+	// 	// 	$line = explode(" ", fgets($v1File));
+	// 	// 	$v1[$line[0]] = intval($line[1]);
+	// 	// }
+	// 	// fclose($v1File);
 
-		// $v2File = fopen($fn2, 'r');
-		// $v2 = array();
-		// $s2 = intval(fgets($v2File));
-		// while (!feof($v2File)) {
-		// 	$line = explode(" ", fgets($v2File));
-		// 	$v2[$line[0]] = intval($line[1]);
-		// }
-		// fclose($v2File);
+	// 	// $v2File = fopen($fn2, 'r');
+	// 	// $v2 = array();
+	// 	// $s2 = intval(fgets($v2File));
+	// 	// while (!feof($v2File)) {
+	// 	// 	$line = explode(" ", fgets($v2File));
+	// 	// 	$v2[$line[0]] = intval($line[1]);
+	// 	// }
+	// 	// fclose($v2File);
 
-		// $score = ComputeScore::compute($v1, $s1, $v2, $s2);
-		// $scoreFile = fopen('score.txt', 'a');
-		// fwrite($scoreFile, $score." ".$fn1." ".$fn2."\r\n");
-		// fclose($scoreFile);
+	// 	// $score = ComputeScore::compute($v1, $s1, $v2, $s2);
+	// 	// $scoreFile = fopen('score.txt', 'a');
+	// 	// fwrite($scoreFile, $score." ".$fn1." ".$fn2."\r\n");
+	// 	// fclose($scoreFile);
 	}
 }
 
-VectorBuilder::build('file', '2015FoxC.txt');
+// VectorBuilder::build('file', '2015FoxC.txt_329');
 // VectorBuilder::build('2012HanemanP_thesis.txt');
 // VectorBuilder::build('2010CostanzoL.txt');
 // VectorBuilder::build('Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt');
@@ -156,7 +156,7 @@ VectorBuilder::build('file', '2015FoxC.txt');
 
 
 // VectorBuilder::computeScore('V_Efficient and Robust Feature Selection via Joint l2,1-Norms Minimization.txt', 'V_2010CostanzoL.txt');
-// VectorBuilder::computeScore('V_2010CostanzoL.txt', 'V_2010CostanzoL.txt');
+VectorBuilder::computeScore('vector/V_2010CostanzoL.txt', 'V_2010CostanzoL.txt');
 
 
 

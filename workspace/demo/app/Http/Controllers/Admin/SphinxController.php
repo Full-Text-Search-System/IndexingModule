@@ -71,7 +71,7 @@ class SphinxController extends Controller
 
         // can set weight for each attribute
 
-        $result = $cl->Query($keyword);
+        $result = $cl->Query($keyword, 'test1, testrt');
         $idList = array();
 
         if ($result['total_found'] != '0') {

@@ -81,17 +81,7 @@ class FilesController extends Controller
             Helper::create($conn)->truncateRtIndex('testrt')->execute();
 
             // build delta-index and merge it into main-index
-            // system('sudo indexer --merge test1 testdelta --rotate', $code);
-            // system('sudo indexer testdelta --rotate', $code);
-            // system('sudo indexer --merge test1 testdelta --rotate', $code);
             pclose(popen('php /var/www/demo/app/Http/Controllers/Admin/updateIndex.php &', 'r'));
-            // system('php /var/www/demo/app/Http/Controllers/Admin/merge.php');
-
-            // $file = popen("sudo indexer testdelta --rotate","r");
-            // pclose($file);
-
-            // $file = popen('sudo indexer --merge test1 testdelta --rotate',"r");
-            // pclose($file);  
 
             $rtids[0]->start_id = intval($id);
         } 

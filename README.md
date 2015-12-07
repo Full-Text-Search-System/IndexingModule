@@ -21,7 +21,7 @@ Vagrant download link: https://www.vagrantup.com/downloads.html
 
 ###Init a Ubuntu 14.04 virtual machine with the required develop envrionment
 
-#####We have upload a vagrant box wiht required development envrionment in https://atlas.hashicorp.com/FTS
+#####We have upload a vagrant box wiht required development envrionment in https://atlas.hashicorp.com/FTS, please download the version 2.0 one
 
 
 If you want to modify the virtual machine, you can ssh to the virtual machine:

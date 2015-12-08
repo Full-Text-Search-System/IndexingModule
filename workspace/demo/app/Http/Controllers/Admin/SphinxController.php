@@ -80,7 +80,7 @@ class SphinxController extends Controller
             }
         }
 
-        return Response::json(['ids' => $idList, 'matchMode' => $match_mode, 'rankMode' => $rank_mode]);
+        return Response::json(['ids' => $idList, 'matchMode' => $match_mode, 'rankMode' => $rank_mode, 'keyword' => $keyword]);
     }
 
     /**
